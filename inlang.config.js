@@ -9,10 +9,10 @@ export async function defineConfig(env) {
 	)
 
 	return {
-		referenceLanguage: "en",
+		referenceLanguage: "zh",
 		plugins: [
 			i18nextPlugin({
-				pathPattern: "./packages/apps/public/locales/{language}/*.json",
+				pathPattern: "./packages/apps/public/locales/{language}/translation.json",
         ignore: ["index.json"]
 			}), standardLintRules(),
 		],
