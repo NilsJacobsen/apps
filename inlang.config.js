@@ -12,7 +12,7 @@ export async function defineConfig(env) {
 		referenceLanguage: "en",
 		plugins: [
 			i18nextPlugin({
-				pathPattern: "./packages/apps/public/locales/{language}/translation.json",
+				pathPattern: "./packages/apps/public/locales/{language}/*.json",
 			}), standardLintRules(),
 		],
 	}
